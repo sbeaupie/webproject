@@ -1,0 +1,138 @@
+/* General Styles */
+body {
+    background: linear-gradient(to bottom, #3E78B2, #004BA8, #4A525A);
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #ffffff;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #004BA8;
+    padding: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #3E78B2;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+/* Slideshow Styles */
+.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.mySlides {
+    display: none;
+    text-align: center;
+}
+
+.slideshow-container img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+button:nth-of-type(1) {
+    left: 20px;
+}
+
+button:nth-of-type(2) {
+    right: 20px;
+}
+
+/* Form Styles */
+form {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+button[type="submit"] {
+    background-color: #3E78B2;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #004BA8;
+}
+
+/* Utility Classes */
+.hidden {
+    display: none;
+}
